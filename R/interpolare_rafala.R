@@ -50,6 +50,7 @@ plot(rou.geo, add = T)
 text(coordinates(dat.co.geo)[,1],coordinates(dat.co.geo)[,2], dat.co.geo$Raf_max,
      col = "#636363")
 grid()
+
 dev.off()
 
 
