@@ -4,7 +4,7 @@ library(climatetools)
 library(classInt)
 source("R/krige1_functii.R")
 
-
+gfg
 # citeste granitele
 rou <- readOGR("shp", "romania")
 proj4string(rou) <- CRS("+init=epsg:3844")
