@@ -42,7 +42,7 @@ dat.co.geo <- spTransform(dat.co, CRS("+init=epsg:4326"))
 
 brks <- classIntervals(dat.co$Raf_max, n = 5, style = "pretty")
 nb <- length(brks$brks) - 1 
-cols <- rev(heat.colors(nb))
+cols <- rev(topo.colors(nb))
 
 png("png/Raf_max.png",width = 2000, height = 1480, units = "px", res = 200)
 plot(r.geo, breaks = brks$brks, col = cols, lab.breaks = brks$brks)
